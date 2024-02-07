@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página con Navegación y Scroll Suave</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      cursor: pointer;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    section:nth-child(even) {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Página con Navegación y Scroll Suave</h1>
+  </header>
+
+  <nav>
+    <a href="#seccion1" class="nav-item">Sección 1</a>
+    <a href="#seccion2" class="nav-item">Sección 2</a>
+    <a href="#seccion3" class="nav-item">Sección 3</a>
+  </nav>
+
+  <section id="seccion1">
+    <h2>Sección 1</h2>
+    <p>Contenido de la sección 1...</p>
+  </section>
+
+  <section id="seccion2">
+    <h2>Sección 2</h2>
+    <p>Contenido de la sección 2...</p>
+  </section>
+
+  <section id="seccion3">
+    <h2>Sección 3</h2>
+    <p>Contenido de la sección 3...</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('.nav-item').forEach(link => {
+      link.addEventListener('click', scrollToSection);
+    });
+
+    function scrollToSection(event) {
+      event.preventDefault();
+      const targetId = event.target.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+</body>
+</html>

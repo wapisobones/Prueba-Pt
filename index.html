@@ -15,6 +15,17 @@
         integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/estilos.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          scroll-behavior: smooth;
+          font-family: Arial, sans-serif;
+        }
+    
+        
+        
+      </style>
 </head>
 
 <body>
@@ -30,13 +41,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Acerca de mi</a>
+                        <a class="nav-link" href="#Acerca-de-mi">Acerca de mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trabajos</a>
+                        <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#Contacto">Contacto</a>
                     </li>
 
                 </ul>
@@ -44,6 +55,7 @@
             </div>
         </div>
     </nav>
+   
 
     <header id="Hero-Section" class="text-light text-end py-5 mt-5">
         <div class="container">
@@ -193,13 +205,28 @@
 
 
     <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Olivia Ros 2019. Todos los derechos reservados.</p>
+        <p class="mb-0">Patricio Albornoz 2024. Todos los derechos reservados.</p>
     </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+        <script>
+            document.querySelectorAll('.nav-item').forEach(link => {
+              link.addEventListener('click', scrollToSection);
+            });
+        
+            function scrollToSection(event) {
+              event.preventDefault();
+              const targetId = event.target.getAttribute('href').substring(1);
+              const targetSection = document.getElementById(targetId);
+        
+              if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }
+          </script>
 </body>
 
 </html>
