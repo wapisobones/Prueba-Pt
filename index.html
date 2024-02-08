@@ -16,6 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/estilos.css">
     <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/EstiloContenedor.css">
     <script src="https://kit.fontawesome.com/6fcb545c6c.js" crossorigin="anonymous"></script>
     <script type='module' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js'></script>
 
@@ -55,7 +56,7 @@
                         <a class="nav-link" href="#Mis-trabajos">Trabajos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Contacto">Contacto</a>
+                        <a class="nav-link" href="#Contacto">Conocimientos</a>
                     </li>
 
                 </ul>
@@ -91,7 +92,7 @@
         <p class="my-4">
             Ingeniero DevOps con 2 experiencia. En la implementación exitosa de prácticas DevOps en Dimension S.A. 
             Mis responsabilidades incluyen liderar la gestión de versiones a través de GitLab, automatizar procesos de desarrollo y despliegue, y mejorar la eficiencia en el ciclo de desarrollo de software. 
-            Colaboro eficazmente en equipos multidisciplinarios y poseo conocimientos en tecnologías como Git y GitLab
+            Colaboro eficazmente en equipos multidisciplinarios y poseo conocimientos en tecnologías como Git, GitLab o GitHub 
         </p>
 
 
@@ -166,9 +167,14 @@
                         <p class="card-text">
                             
                         </p>
-                        <button type="button" class="btn btn-outline-info">
+                        <!--<a href="pruebaimpl.html" class="btn btn-outline-info">
+                            Ver más
+                        </a>-->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Ver más
                         </button>
+  
                     </div>
                 </div>
             </div>
@@ -211,19 +217,19 @@
             <div class="wrapper">
                 <div class="icon facebook ">
                     <div class="tooltip">Linkedin</div>
-                <span><i class="fa-brands fa-linkedin fa-3x" style="color: #089cf1e0;"></i></span>
+                <span><i class="fa-brands fa-linkedin " style="color: #089cf1e0;"></i></span>
                 </div>
             </div>
             <div class="wrapper">
-                <div class="icon facebook shadow-in">
+                <div class="icon facebook ">
                     <div class="tooltip">Instagram</div>
-                    <span><i class="fa-brands fa-instagram fa-3x" style="color: #f18d08e0"></i></i></span>
+                    <span><i class="fa-brands fa-instagram " style="color: #f18d08e0"></i></i></span>
                 </div>
             </div>
             <div class="wrapper">
                 <div class="icon facebook ">
                     <div class="tooltip">X</div>
-                    <span><i class="fa-brands fa-x-twitter fa-2x" style="color: black;"></i></i></span>
+                    <span><i class="fa-brands fa-x-twitter " style="color: black;"></i></i></span>
                 </div>           
             </div>
             <!--<div class="wrapper">
@@ -300,5 +306,75 @@
 <!--=======================================================================================================-->
           
 </body>
+<!-- Modales de despligue -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Linea de tiempo de implementacion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--contenedor-->
+          <div class="container">                      
+            <div class="row text-center justify-content-center mb-5">
+                <div class="col-xl-6 col-lg-8">
+                    <h2 class="font-weight-bold">A Company Evolution</h2>
+                    <p class="text-muted">We’re very proud of the path we’ve taken. Explore the history that made us the company we are today.</p>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col">
+                    <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2003">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2003</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Favland Founded</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2004">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2004</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Launched Trello</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2005">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2005</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Launched Messanger</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2010">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2010</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">Open New Branch</p>
+                            </div>
+                        </div>
+                        <div class="timeline-step mb-0">
+                            <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="" data-content="And here's some amazing content. It's very engaging. Right?" data-original-title="2020">
+                                <div class="inner-circle"></div>
+                                <p class="h6 mt-3 mb-1">2020</p>
+                                <p class="h6 text-muted mb-0 mb-lg-0">In Fortune 500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">volver</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 </html>
