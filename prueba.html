@@ -54,32 +54,25 @@
                                 </div><!-- end col -->
                             </div><!-- end row -->
                          
-                            <ul class="nav nav-tabs nav-tabs-custom border-bottom-0 mt-3 nav-justfied" role="tablist">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link px-4 active" data-bs-toggle="tab" href="#projects-tab" role="tab" aria-selected="false" tabindex="-1">
-                                        <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                        <span class="d-none d-sm-block">Projects</span>
-                                    </a>
-                                </li><!-- end li -->
+                                    <a class="nav-link active" id="pills-home-tab" href="#" data-bs-toggle="tab" data-bs-target="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                                </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link px-4"  href="#tasks-tab" target="__blank" >
-                                        <span class="d-block d-sm-none"><i class="mdi mdi-menu-open"></i></span>
-                                        <span class="d-none d-sm-block">Tasks</span>
-                                    </a>
-                                </li><!-- end li -->
+                                    <a class="nav-link" id="pills-profile-tab" href="#" data-bs-toggle="tab" data-bs-target="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                                </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link px-4 "  href="https://bootdey.com/snippets/view/profile-with-team-section" target="__blank" >
-                                        <span class="d-block d-sm-none"><i class="mdi mdi-account-group-outline"></i></span>
-                                        <span class="d-none d-sm-block">Team</span>
-                                    </a>
-                                </li><!-- end li -->
-                            </ul><!-- end ul -->
+                                    <a class="nav-link" id="pills-contact-tab" href="#" data-bs-toggle="tab" data-bs-target="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
                         </div>
                     </div><!-- end col -->
                 </div><!-- end row -->
             </div><!-- end card body -->
         </div><!-- end card -->
 
+        <div class="tab-content active" id="pills-home">
+            Contenido de Home
         <div class="card">
             <div class="tab-content p-4">
                 <div class="tab-pane active show" id="projects-tab" role="tabpanel">
@@ -370,8 +363,8 @@
 
             </div>
         </div><!-- end card -->
+        </div>
     </div><!-- end col -->
-
     <div class="col-xl-4">
         <div class="card">
             <div class="card-body">
@@ -456,13 +449,12 @@
 </div>
 </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div class="container">
 <div class="row">
-  <section>
     <div class="col-xl-8">
         
-
+        <div class="tab-content" id="pills-profile">
+            Contenido de Profile
         <div class="card">
             <div class="tab-content p-4">
                 <div class="tab-pane active show" id="tasks-tab" role="tabpanel">
@@ -668,7 +660,26 @@
                 
             </div>
         </div><!-- end card -->
+        </div>
     </div><!-- end col -->
-  </section>
+<!-- Scripts necesarios -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-/R+dfT7mhO8J8pWuU3I+xThmIbEEj1qzSgTQFk8JcEWeZaxW8tdBlTBDe6ZXhXTt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZeP3QQsDpP5ZEK6+8nU5L/Uxof0x1YW0zOQqEj0dBRpa8yZf+zM5RBvm9aWIfh6" crossorigin="anonymous"></script>
+<script>
+    // JavaScript para gestionar el cambio de pestañas
+    document.querySelectorAll('.nav-link').forEach(function (tab) {
+        tab.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Oculta todas las pestañas
+            document.querySelectorAll('.tab-content').forEach(function (content) {
+                content.classList.remove('active');
+            });
+
+            // Muestra la pestaña activa
+            document.querySelector(this.getAttribute('data-bs-target')).classList.add('active');
+        });
+    });
+</script>
     
 </html>
