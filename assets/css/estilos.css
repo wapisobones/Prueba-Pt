@@ -37,6 +37,15 @@ body {
   }
 
 }
+/* Tamaño del modal de la linea de tiempo (implementacion GitLab)*/
+.modal-lg
+{
+  max-width: 90% !important;
+  max-height: 90%;
+  align-items: center;
+}
+
+
 /* CSS del contenedor del modal*/
 body{margin-top:20px;}
 .timeline-steps {
