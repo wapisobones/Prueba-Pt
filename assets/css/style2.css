@@ -670,8 +670,8 @@ text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.01);
 .wrapper .facebook:hover,
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
-background: #c81f4b;
-color: #fff;
+background: #ffffff;
+color: #000000;
 }
 .wrapper .face:hover,
 .wrapper .face:hover .tooltip,

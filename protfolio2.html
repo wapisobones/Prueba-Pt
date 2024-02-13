@@ -21,6 +21,8 @@
         .contenedor
         {
             display: flex;
+            margin: auto;
+            width: 50%;
         }
         .icon 
         {
@@ -33,6 +35,7 @@
     </style>
     <link rel="stylesheet" href="assets/css/cssport.css">
     <link rel="stylesheet" href="assets/css/csscontacto.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -73,6 +76,7 @@
                                                         <div class="wrapper">
                                                         <!--Icono con redireccionamiento al perfil de linkedin solo cambiar la referencia del "href"-->
                                                                 <div class="icon facebook">
+                                                                    <div class="tooltip">Linkedin</div>
                                                                     <a href="https://www.linkedin.com/" target="_blank"><span><i class="fa-brands fa-linkedin fa-up" style="color: rgb(0, 132, 255);"></i></span></a>
                                                                 </div>
                                                         </div>
@@ -81,16 +85,26 @@
                                                         <div class="wrapper">
                                                         <!--Icono con redireccionamiento al perfil de Instagram solo cambiar la referencia del "href"-->
                                                                 <div class="icon facebook">
+                                                                    <div class="tooltip">Instagram</div>
                                                                     <a href="https://www.instagram.com/" target="_blank"><span><i class="fa-brands fa-instagram fa-up" style="color: #E4405F;"></i></span></a>
                                                                 </div>
                                                         </div>
                                                     </div>
                                                     <div class="wrapper">
-                                                        <div class="wrapper">
-                                                            <div class="tooltip">X</div>
+                                                        <div class="wrapper">                                                        
                                                         <!--Icono con redireccionamiento al perfil de x-Twitter solo cambiar la referencia del "href"-->
                                                                 <div class="icon facebook">
+                                                                    <div class="tooltip">X</div>
                                                                     <a href="https://twitter.com/" target="_blank"><span><i class="fa-brands fa-x-twitter fa-up" style="color: rgb(0, 0, 0);"></i></span></a>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wrapper">
+                                                        <div class="wrapper">
+                                                        <!--Icono con redireccionamiento al Curriculum Vitae solo cambiar el archivo en la carpeta de PDF-->
+                                                                <div class="icon facebook">
+                                                                    <div class="tooltip">CV</div>
+                                                                    <a href="PDF/CV.pdf" target="_blank" download><span><i class="fa-solid fa-file-import fa-up" style="color: rgb(0, 0, 0);"></i></span></a>
                                                                 </div>
                                                         </div>
                                                     </div>
@@ -100,17 +114,19 @@
                                     </div><!-- end row -->
                                  
                                      <!-- Pestañas con nav-pills -->
-    <ul class="nav nav-pills" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-home-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel1" role="tab" aria-controls="pills-home" >Proyectos</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-profile-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel2" role="tab" aria-controls="pills-profile" >Cursos</a>
-        </li>
-        <li class="nav-item" role="presentation">
-            <a class="nav-link" id="pills-contact-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel3" role="tab" aria-controls="pills-contact" >Tareas</a>
-        </li>
-    </ul>
+                                     
+                                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-home-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel1" role="tab" aria-controls="pills-home" >Proyectos</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-profile-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel2" role="tab" aria-controls="pills-profile" >Cursos</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-contact-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel3" role="tab" aria-controls="pills-contact" >Tareas</a>
+                                        </li>
+                                    </ul>
+    
                                 </div>
                             </div><!-- end col -->
                         </div><!-- end row -->
@@ -762,46 +778,50 @@
     </script>
     <!--para clase Fa-Fa-bounds-->
          <!--SCRIPTS JQUERY==========================================================================================-->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-<!--========================================================================================================-->
- 
-    <!--=============OCULTAR TEXTO EN SECTION QUIENES SOMOS=========================//-->
-<script>
-    $(document).ready(function () {
-        $("#viajes").click(function () {
-          $('#texto1').toggle("swing");
-        });
-        $("#lugar").click(function () {
-          $('#texto2').toggle("swing");
-        });
-        $("#mapas").click(function () {
-          $('#texto3').toggle("swing");
-        });
-      });
-      //==========================================================================//
-    //==============ANIMAR ICONOS REDES SOCIALES HOVER===========================//
-      $('.fa-up').hover(function () {
-        $(this).addClass('fa-bounce');
-      }, function () {
-        $(this).removeClass('fa-bounce');
-      });
-      //==========================================================================//
-</script>
- 
- 
-    <!--SCRIPTS BOOTSTRAP=======================================================================================-->
-<script>
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>
-<script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-<!--=======================================================================================================-->
- 
-    <!--SCRIPTS FONTAWESOME====================================================================================-->
-<script src="https://kit.fontawesome.com/19e2a818fa.js" crossorigin="anonymous"></script>
-<!--=======================================================================================================-->
+            <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+            <!--========================================================================================================-->
+            
+                <!--=============OCULTAR TEXTO EN SECTION QUIENES SOMOS=========================//-->
+            <script>
+                $(document).ready(function () {
+                    $("#viajes").click(function () {
+                    $('#texto1').toggle("swing");
+                    });
+                    $("#lugar").click(function () {
+                    $('#texto2').toggle("swing");
+                    });
+                    $("#mapas").click(function () {
+                    $('#texto3').toggle("swing");
+                    });
+                });
+                //==========================================================================//
+                //==============ANIMAR ICONOS REDES SOCIALES HOVER===========================//
+                $('.fa-up').hover(function () {
+                    $(this).addClass('fa-bounce');
+                }, function () {
+                    $(this).removeClass('fa-bounce');
+                });
+                //==========================================================================//
+            </script>
+            
+            
+                <!--SCRIPTS BOOTSTRAP=======================================================================================-->
+            <script>
+                const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+                const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+            </script>
+            <script>
+                const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+                const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+            </script>
+            <!--=======================================================================================================-->
+            
+                <!--SCRIPTS FONTAWESOME====================================================================================-->
+            <script src="https://kit.fontawesome.com/19e2a818fa.js" crossorigin="anonymous"></script>
+            <!--=======================================================================================================-->
 </body>
+    <footer>
+        <p class="mb-0">Patricio Albornoz 2024. Todos los derechos reservados.</p>
+        <p class="text-center my-4 d-none d-md-block"></p>
+    </footer>
 </html>
