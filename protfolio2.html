@@ -15,6 +15,13 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <style>
+        .footer
+        {
+           padding: 10px;
+           text-align: center;
+           margin-top: auto;
+            
+        }
         .tab-content {
             display: none;
         }
@@ -22,7 +29,7 @@
         {
             display: flex;
             margin: auto;
-            width: 50%;
+            
         }
         .icon 
         {
@@ -35,7 +42,7 @@
     </style>
     <link rel="stylesheet" href="assets/css/cssport.css">
     <link rel="stylesheet" href="assets/css/csscontacto.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+    
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -75,8 +82,7 @@
                                                     <div class="wrapper">
                                                         <div class="wrapper">
                                                         <!--Icono con redireccionamiento al perfil de linkedin solo cambiar la referencia del "href"-->
-                                                                <div class="icon facebook">
-                                                                    <div class="tooltip">Linkedin</div>
+                                                                <div class="icon facebook">                                                                   
                                                                     <a href="https://www.linkedin.com/" target="_blank"><span><i class="fa-brands fa-linkedin fa-up" style="color: rgb(0, 132, 255);"></i></span></a>
                                                                 </div>
                                                         </div>
@@ -84,8 +90,7 @@
                                                     <div class="wrapper">
                                                         <div class="wrapper">
                                                         <!--Icono con redireccionamiento al perfil de Instagram solo cambiar la referencia del "href"-->
-                                                                <div class="icon facebook">
-                                                                    <div class="tooltip">Instagram</div>
+                                                                <div class="icon facebook">                                                                    
                                                                     <a href="https://www.instagram.com/" target="_blank"><span><i class="fa-brands fa-instagram fa-up" style="color: #E4405F;"></i></span></a>
                                                                 </div>
                                                         </div>
@@ -93,8 +98,7 @@
                                                     <div class="wrapper">
                                                         <div class="wrapper">                                                        
                                                         <!--Icono con redireccionamiento al perfil de x-Twitter solo cambiar la referencia del "href"-->
-                                                                <div class="icon facebook">
-                                                                    <div class="tooltip">X</div>
+                                                                <div class="icon facebook">                                                                   
                                                                     <a href="https://twitter.com/" target="_blank"><span><i class="fa-brands fa-x-twitter fa-up" style="color: rgb(0, 0, 0);"></i></span></a>
                                                                 </div>
                                                         </div>
@@ -102,9 +106,8 @@
                                                     <div class="wrapper">
                                                         <div class="wrapper">
                                                         <!--Icono con redireccionamiento al Curriculum Vitae solo cambiar el archivo en la carpeta de PDF-->
-                                                                <div class="icon facebook">
-                                                                    <div class="tooltip">CV</div>
-                                                                    <a href="PDF/CV.pdf" target="_blank" download><span><i class="fa-solid fa-file-import fa-up" style="color: rgb(0, 0, 0);"></i></span></a>
+                                                                <div class="icon facebook">                                                                    
+                                                                    <a href="PDF/CV.pdf" target="_blank" download><span><i class="fa-solid fa-file-pdf fa-up" style="color: rgb(0, 0, 0);"></i></span></a>
                                                                 </div>
                                                         </div>
                                                     </div>
@@ -124,6 +127,9 @@
                                         </li>
                                         <li class="nav-item" role="presentation">
                                             <a class="nav-link" id="pills-contact-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel3" role="tab" aria-controls="pills-contact" >Tareas</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-skill-tab" href="#" data-bs-toggle="tab" data-bs-target="#Panel4" role="tab" aria-controls="pills-skill" >Conocimientos</a>
                                         </li>
                                     </ul>
     
@@ -178,23 +184,23 @@
                                             <div class="d-flex">
                                                 <div class="avatar-group float-start flex-grow-1 task-assigne">
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-6" aria-label="Terrell Soto" data-bs-original-title="Terrell Soto">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-6" aria-label="Terrell Soto" data-bs-original-title="Terrell Soto">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-1" aria-label="Ruhi Shah" data-bs-original-title="Ruhi Shah">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-1" aria-label="Ruhi Shah" data-bs-original-title="Ruhi Shah">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-15" data-bs-original-title="Denny Silva">
+                                                        <!--<a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-15" data-bs-original-title="Denny Silva">
                                                             <div class="avatar-sm">
                                                                 <div class="avatar-title rounded-circle bg-primary">
                                                                     D
                                                                 </div>
                                                             </div>
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                 </div><!-- end avatar group -->
                                                 <div class="align-self-end">
@@ -239,14 +245,14 @@
                                             <div class="d-flex">
                                                 <div class="avatar-group float-start flex-grow-1 task-assigne">
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Kelly Osborn" data-bs-original-title="Kelly Osborn">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Kelly Osborn" data-bs-original-title="Kelly Osborn">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-2" aria-label="John Page" data-bs-original-title="John Page">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-2" aria-label="John Page" data-bs-original-title="John Page">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                 </div><!-- end avatar group -->
                                                 <div class="align-self-end">
@@ -290,20 +296,11 @@
                                             </div>
                                             <div class="d-flex">
                                                 <div class="avatar-group float-start flex-grow-1 task-assigne">
-                                                    <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-3" aria-label="Judy Newland" data-bs-original-title="Judy Newland">
-                                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                    <div class="avatar-group-item">   
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-5" aria-label="Jeffery Legette" data-bs-original-title="Jeffery Legette">
-                                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-6" aria-label="Jose Rosborough" data-bs-original-title="Jose Rosborough">
-                                                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
                                                     </div>
                                                 </div><!-- end avatar group -->
                                                 <div class="align-self-end">
@@ -339,7 +336,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-        
                                             <div class="mb-4">
                                                 <h5 class="mb-1 font-size-17 team-title">Testing</h5>
                                                 <p class="text-muted mb-0 team-description">The procurement
@@ -349,9 +345,9 @@
                                             <div class="d-flex">
                                                 <div class="avatar-group float-start flex-grow-1 task-assigne">
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Jansh Wells" data-bs-original-title="Jansh Wells">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Jansh Wells" data-bs-original-title="Jansh Wells">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                 </div><!-- end avatar group -->
                                                 <div class="align-self-end">
@@ -361,7 +357,6 @@
                                         </div><!-- end card-body -->
                                     </div><!-- end card -->
                                 </div><!-- end col -->
-        
                                 <div class="col-md-6" id="project-items-5">
                                     <div class="card mb-lg-0">
                                         <div class="card-body">
@@ -386,7 +381,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-        
                                             <div class="mb-4">
                                                 <h5 class="mb-1 font-size-17 team-title">Typography</h5>
                                                 <p class="text-muted mb-0 team-description">Typography is the
@@ -396,19 +390,13 @@
                                             <div class="d-flex">
                                                 <div class="avatar-group float-start flex-grow-1 task-assigne">
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-1" aria-label="Ruhi Luft" data-bs-original-title="Ruhi Luft">
-                                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-5" aria-label="Elias Hardage" data-bs-original-title="Elias Hardage">
-                                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
                                                     </div>
                                                     <div class="avatar-group-item">
-                                                        <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Jansh Wells" data-bs-original-title="Jansh Wells">
+                                                        <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-10" aria-label="Jansh Wells" data-bs-original-title="Jansh Wells">
                                                             <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                        </a>
+                                                        </a>-->
                                                     </div>
                                                 </div><!-- end avatar group -->
                                                 <div class="align-self-end">
@@ -420,8 +408,6 @@
                                 </div><!-- end col -->
                             </div><!-- end row -->
                         </div><!-- end tab pane -->
-        
-        
                     </div>
                 </div><!-- end card -->
                     <!-- Contenido de las pestañas Profile-->
@@ -436,16 +422,13 @@
                 </div>
                 <div class="row">
                     <div class="col-xl-12">
-                        
-
                         <div class="task-list-box" id="design-task">
                             <div id="task-item-2">
                                 <div class="card task-box rounded-3">
                                     <div class="card-body">
                                         <div class="row align-items-center">
                                             <div class="col-xl-6 col-sm-5">
-                                                <div class="checklist form-check font-size-15">
-                                                    <input type="checkbox" class="form-check-input" id="customCheck2">
+                                                <div class="checklist form-check font-size-15">                                                    
                                                     <label class="form-check-label ms-1 task-title" for="customCheck2">Create a Layout
                                                         Design</label>
                                                 </div>
@@ -455,19 +438,13 @@
                                                     <div class="col-xl-5 col-md-6 col-sm-5">
                                                         <div class="avatar-group mt-3 mt-xl-0 task-assigne">
                                                             <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" value="member-3" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Terrell Soto" data-bs-original-title="Terrell Soto">
+                                                                <!--<a href="javascript: void(0);" class="d-inline-block" value="member-3" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Terrell Soto" data-bs-original-title="Terrell Soto">
                                                                     <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
+                                                                </a>-->
                                                             </div>
                                                             <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" value="member-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Ruhi Shah" data-bs-original-title="Ruhi Shah">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
                                                             </div>
                                                             <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" value="member-1" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="Ruhi Shah" data-bs-original-title="Ruhi Shah">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
                                                             </div>
                                                         </div><!-- end avatar group -->
                                                     </div><!-- end col -->
@@ -475,10 +452,177 @@
                                                         <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
                                                             <div>
                                                                 <span class="badge rounded-pill badge-soft-warning font-size-11 task-status">Progress</span>
+                                                            </div> 
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                    </div><!-- end cardbody -->
+                                </div><!-- end card -->
+                            </div>
+                        </div><!-- end -->
+                        <div class="task-list-box" id="blog-task">
+                            <div id="task-item-3">
+                            </div>
+                        </div><!-- end -->
+                        <div class="task-list-box" id="comp-task">
+                            <div id="task-item-4"> 
+                            </div>
+                        </div><!-- end -->
+                        <div class="task-list-box" id="app-task">
+                            <div id="task-item-5">
+                                <div class="card task-box rounded-3">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-sm-5">
+                                                <div class="checklist form-check font-size-15">
+                                                    <label class="form-check-label ms-1 task-title" for="customComponents">Components
+                                                        Pages</label>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-6 col-sm-7">
+                                                <div class="row align-items-center">
+                                                    <div class="col-xl-5 col-md-6 col-sm-5">
+                                                        <div class="avatar-group mt-3 mt-xl-0 task-assigne">
+                                                            <div class="avatar-group-item">
                                                             </div>
-                                                            
-                                                            
-                                                            
+                                                            <div class="avatar-group-item">
+                                                            </div>
+                                                            <div class="avatar-group-item">
+                                                                <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-8" data-bs-placement="top" aria-label="Tama Turner" data-bs-original-title="Tama Turner">
+                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" class="rounded-circle avatar-sm">
+                                                                </a>-->
+                                                            </div>
+                                                        </div><!-- end avatar group -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-xl-7 col-md-6 col-sm-7">
+                                                        <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
+                                                            <div>
+                                                                <span class="badge rounded-pill badge-soft-danger font-size-11 task-status">Pending</span>
+                                                            </div> 
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                    </div><!-- end cardbody -->
+                                </div><!-- end card -->
+                            </div>
+                        </div><!-- end -->
+                        <div class="task-list-box" id="gallery-task">
+                            <div id="task-item-6">
+                                <div class="card task-box rounded-3">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-sm-5">
+                                                <div class="checklist form-check font-size-15">
+                                                    <label class="form-check-label ms-1 task-title" for="customGallry">Create a Gallery
+                                                        Pages</label>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-6 col-sm-7">
+                                                <div class="row align-items-center">
+                                                    <div class="col-xl-5 col-md-6 col-sm-5">
+                                                        <div class="avatar-group mt-3 mt-xl-0 task-assigne">
+                                                            <div class="avatar-group-item">
+                                                                <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-5" data-bs-placement="top" aria-label="John Walker" data-bs-original-title="John Walker">
+                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" class="rounded-circle avatar-sm">
+                                                                </a>-->
+                                                            </div>
+                                                            <div class="avatar-group-item">
+                                                            </div>
+                                                        </div><!-- end avatar group -->
+                                                    </div><!-- end col -->
+                                                    <div class="col-xl-7 col-md-6 col-sm-7">
+                                                        <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
+                                                            <div>
+                                                                <span class="badge rounded-pill badge-soft-success font-size-11 task-status">Completed</span>
+                                                            </div>
+                                                        </div>
+                                                    </div><!-- end col -->
+                                                </div><!-- end row -->
+                                            </div><!-- end col -->
+                                        </div><!-- end row -->
+                                    </div><!-- end cardbody -->
+                                </div><!-- end card -->
+                            </div>
+                        </div><!-- end -->
+                    </div><!-- end col -->
+                </div>
+            </div>
+        </div>
+    </div>    
+<!-- Contenido de las pestañas Task o tareas-->
+<!-- Tercera pestaña tareas que desempeña el usuario-->
+    <div class="card">
+        <div class="tab-content p-4" id="Panel3">
+            <div class="tab-pane active show" id="pills-contact" role="tabpanel">
+                <div class="d-flex align-items-center">
+                    <div class="flex-1">
+                        <h4 class="card-title mb-4">Tareas</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6" id="team-1">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex mb-4">
+                                    <div class="flex-grow-1 align-items-start">
+                                        <div class="avatar-group float-start flex-grow-1">
+                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
+                                                <!--<a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Terrell Soto">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="rounded-circle avatar-sm">
+                                                </a>-->
+                                            </div>
+                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
+                                            </div>
+                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
+                                            </div>
+                                        </div><!-- end avatar group -->
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1 font-size-17">Marketing</h5>
+                                    <p class="text-muted  font-size-13 mb-0">4 Projects</p>
+                                </div>
+                            </div><!-- end card-body -->
+                        </div><!-- end card -->
+                    </div><!-- end col -->
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="card">
+        <div class="tab-content p-4" id="Panel4">
+            <div class="tab-pane active show" id="pills-skill" role="tabpanel">
+                <div class="d-flex align-items-center">
+                    <div class="flex-1">
+                        <h4 class="card-title mb-4">Conocimientos</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="task-list-box" id="design-task">
+                            <div id="task-item-2">
+                                <div class="card task-box rounded-3">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col-xl-6 col-sm-5">
+                                                <div class="checklist form-check font-size-15">                                                    
+                                                    <label class="form-check-label ms-1 task-title" for="customCheck2">Create a Layout
+                                                        Design</label>
+                                                </div>
+                                            </div><!-- end col -->
+                                            <div class="col-xl-6 col-sm-7">
+                                                <div class="row align-items-center">
+                                                    <div class="col-xl-5 col-md-6 col-sm-5">
+                                                    </div><!-- end col -->
+                                                    <div class="col-xl-7 col-md-6 col-sm-7">
+                                                        <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
+                                                            <div>
+                                                                <span class="badge rounded-pill badge-soft-warning font-size-11 task-status">Progress</span>
+                                                            </div> 
                                                         </div>
                                                     </div><!-- end col -->
                                                 </div><!-- end row -->
@@ -508,7 +652,6 @@
                                         <div class="row align-items-center">
                                             <div class="col-xl-6 col-sm-5">
                                                 <div class="checklist form-check font-size-15">
-                                                    <input type="checkbox" class="form-check-input" id="customComponents">
                                                     <label class="form-check-label ms-1 task-title" for="customComponents">Components
                                                         Pages</label>
                                                 </div>
@@ -516,23 +659,6 @@
                                             <div class="col-xl-6 col-sm-7">
                                                 <div class="row align-items-center">
                                                     <div class="col-xl-5 col-md-6 col-sm-5">
-                                                        <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                            <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-7" data-bs-placement="top" aria-label="Eric Williams" data-bs-original-title="Eric Williams">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
-                                                            </div>
-                                                            <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-9" data-bs-placement="top" aria-label="Richard Millar" data-bs-original-title="Richard Millar">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
-                                                            </div>
-                                                            <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-8" data-bs-placement="top" aria-label="Tama Turner" data-bs-original-title="Tama Turner">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
-                                                            </div>
-                                                        </div><!-- end avatar group -->
                                                     </div><!-- end col -->
                                                     <div class="col-xl-7 col-md-6 col-sm-7">
                                                         <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
@@ -559,7 +685,6 @@
                                         <div class="row align-items-center">
                                             <div class="col-xl-6 col-sm-5">
                                                 <div class="checklist form-check font-size-15">
-                                                    <input type="checkbox" class="form-check-input" id="customGallry" >
                                                     <label class="form-check-label ms-1 task-title" for="customGallry">Create a Gallery
                                                         Pages</label>
                                                 </div>
@@ -567,18 +692,6 @@
                                             <div class="col-xl-6 col-sm-7">
                                                 <div class="row align-items-center">
                                                     <div class="col-xl-5 col-md-6 col-sm-5">
-                                                        <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                            <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" value="member-5" data-bs-placement="top" aria-label="John Walker" data-bs-original-title="John Walker">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
-                                                            </div>
-                                                            <div class="avatar-group-item">
-                                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" value="member-4" aria-label="Willie Garcia" data-bs-original-title="Willie Garcia">
-                                                                    <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="" class="rounded-circle avatar-sm">
-                                                                </a>
-                                                            </div>
-                                                        </div><!-- end avatar group -->
                                                     </div><!-- end col -->
                                                     <div class="col-xl-7 col-md-6 col-sm-7">
                                                         <div class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
@@ -601,69 +714,7 @@
                 </div>
             </div>
         </div>
-    </div>  
-<!-- Contenido de las pestañas Contac-->
-<!-- Tercera pestaña aun por definirce ya que no se a especificado a que se va a centrar esta pestaña-->
-    <div class="card">
-        <div class="tab-content p-4" id="Panel3">
-            <div class="tab-pane active show" id="pills-contact" role="tabpanel">
-                <div class="d-flex align-items-center">
-                    <div class="flex-1">
-                        <h4 class="card-title mb-4">Tareas</h4>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xl-4 col-md-6" id="team-1">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="d-flex mb-4">
-                                    <div class="flex-grow-1 align-items-start">
-                                        <div class="avatar-group float-start flex-grow-1">
-                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
-                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Terrell Soto">
-                                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="" class="rounded-circle avatar-sm">
-                                                </a>
-                                            </div>
-                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
-                                                <a href="javascript: void(0);" class="d-inline-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Ruhi Shah">
-                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="rounded-circle avatar-sm">
-                                                </a>
-                                            </div>
-                                            <div class="avatar-group-item"><!--en un futuro se pueden dejar como enlaces para los portfolios de otras personas-->
-                                                <a href="javascript: void(0);" class="d-block" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Denny Silva">
-                                                    <div class="avatar-sm">
-                                                        <div class="avatar-title rounded-circle bg-primary">
-                                                            D
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div><!-- end avatar group -->
-                                    </div>
-                                    <div class="dropdown ms-2">
-                                        <a href="#" class="dropdown-toggle font-size-16 text-muted" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="mdi mdi-dots-horizontal"></i>
-                                        </a>
-
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="javascript: void(0);">Edit</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item text-danger leave-team" data-id="1" data-bs-toggle="modal" data-bs-target=".bs-add-leave-team" href="javascript: void(0);">
-                                                Leave Team</a>
-                                        </div>
-                                    </div><!-- end dropdown -->
-                                </div>
-                                <div>
-                                    <h5 class="mb-1 font-size-17">Marketing</h5>
-                                    <p class="text-muted  font-size-13 mb-0">4 Projects</p>
-                                </div>
-                            </div><!-- end card-body -->
-                        </div><!-- end card -->
-                    </div><!-- end col -->
-                </div>
-            </div>
-        </div>
-    </div>          
+    </div>        
         
             </div><!-- end col -->
         <!--Area Sobre la persona un poco de info personal-->
@@ -820,7 +871,7 @@
             <script src="https://kit.fontawesome.com/19e2a818fa.js" crossorigin="anonymous"></script>
             <!--=======================================================================================================-->
 </body>
-    <footer>
+    <footer class="footer">
         <p class="mb-0">Patricio Albornoz 2024. Todos los derechos reservados.</p>
         <p class="text-center my-4 d-none d-md-block"></p>
     </footer>
