@@ -38,15 +38,21 @@
         .tab-content.active {
             display: block;
         }
-        
+        .dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
     <link rel="stylesheet" href="assets/css/cssport.css">
     <link rel="stylesheet" href="assets/css/csscontacto.css">
-    
+    <link rel="stylesheet" href="assets/css/EstiloContenedor.css">
+    <script src="script.js"></script>
+    <script src="js/scriptoscuro.js"></script>
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css" integrity="sha512-LX0YV/MWBEn2dwXCYgQHrpa9HJkwB+S+bnBpifSOTO1No27TqNMKYoAn6ff2FBh03THAzAiiCwQ+aPX+/Qt/Ow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
+    
     <!--Primera card del diseño contiene la biografia, imagen-->
     <div class="container">
         <div class="row">
@@ -61,7 +67,26 @@
                                     <h5 class="text-muted font-size-13 mb-0">DevOps</h5>
                                 </div>
                             </div><!-- end col -->
-                            <div class="col-md-9">
+                            <div class="col-md-9">    
+                                      <header class="header">
+                                        <div class="logo-wrapper">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 30" width="10" height="10" class="logo">                                      
+                                          </svg>
+                                        </div>  
+                                      </header>
+                                      <div class="mode-switch">
+                                        <p class="mode-label"></p>
+                                        <label class="switch">
+                                          <input type="checkbox" />
+                                          <span class="slider">
+                                            <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+                                            </svg>
+                                          </span>
+                                        </label>
+                                      </div>
+                                      <h1 class="title"></h1>  
                                 <div class="ms-3">
                                     <div>
                                         <!--Dejar una introduccion basica de tu perfil-->
@@ -871,6 +896,18 @@
             <script src="https://kit.fontawesome.com/19e2a818fa.js" crossorigin="anonymous"></script>
             <!--=======================================================================================================-->
 </body>
+<!-- Agrega tu archivo script.js para manejar el cambio de modo oscuro/clarto -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleButton = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+      
+        toggleButton.addEventListener('click', function () {
+            body.classList.toggle('dark-mode');
+            
+        });
+      });
+      </script>
     <footer class="footer">
         <p class="mb-0">Patricio Albornoz 2024. Todos los derechos reservados.</p>
         <p class="text-center my-4 d-none d-md-block"></p>

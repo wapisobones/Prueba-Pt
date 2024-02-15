@@ -786,5 +786,52 @@ body.overflow--allow {
   width: 100vw;
   height: 100vh;
 }
+#toggle-dark-mode {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none;
+  cursor: pointer;
+}
+#toggle-dark-mode:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+.body {
+  /*font-family: 'Arial', sans-serif;
+  transition: background-color 0.5s, color 0.5s;*/
+  background-color: #fff; /* Color de fondo predeterminado */
+  color: #333; /* Color de texto predeterminado */
+}
+.dark-mode body {
+  background-color: #333; /* Color de fondo en modo oscuro */
+  color: #333; /* Color de texto en modo oscuro */
+}
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  color: #333;
+}
+/* Estilo en modo oscuro para la clase container */
+.dark-mode .container {
+  background-color: #333;
+  color: #fff;
+}
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
 
 
