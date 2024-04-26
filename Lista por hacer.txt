@@ -1,0 +1,9 @@
+# agregar a la pestaña de los cursos los pdf de los mismo ya sea por medio de link como el cv
+# sacar las redes no importantes (Ista-X) listo
+# ver el tema de los proyectos (Verlo bien)
+# cambiar el tema de las tareas y conocimiento (quiza juntarlo en uno solo) Habilidades? listo falta terminar con los logos
+# Sacar el stack tegnologico listo a medias 
+# re diseñar la pagina se ve todo muy aglomerado
+# el idioma
+# sacar los datos personales es redundante que este 2 veces listo 
+# 

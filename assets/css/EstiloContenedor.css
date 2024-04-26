@@ -118,8 +118,8 @@ h1 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 35px;
+  height: 14px;
 }
 
 .switch input {
@@ -133,8 +133,8 @@ h1 {
   cursor: pointer;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
+  right: 1px;
+  bottom: 1px;
   background-color: lightblue;
   border-radius: 34px;
   transition: 0.6s;
@@ -143,10 +143,10 @@ h1 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 12px;
+  width: 12px;
+  left: 1px;
+  bottom: 1px;
   background-color: white;
   border-radius: 50%;
   transition: 0.4s;
@@ -157,13 +157,13 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(26px);
+  transform: translateX(20px);
 }
 
 .slider-icon {
   transform: rotate(250deg);
   position: absolute;
-  right: 6px;
+  right: 5px;
   top: 7px;
 }
 
@@ -248,6 +248,7 @@ input:checked + .slider:before {
 
 .dark-mode .background {
   background-color: #fff;
+  
 }
 
 .dark-mode .overlay{

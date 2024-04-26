@@ -26,12 +26,12 @@ function load() {
       const width = window.innerWidth;
       const height = window.innerHeight;
       const path =
-        'path("M {0}, {1} m -{2}, 0 a {2}, {1} 0 1, 0 {3}, 0 a {2}, {1} 0 1,0 -{3}, 0z")'.format(
+        'path("M {0}, {1} m -{2}, 0 a {2}, {1} 0 1, 0 {3}, 0 a {2}, {1} 0 1,0 -{3}, 0z")'/*.format(
           width / 2 - 25,
           height / 2,
           width / 2,
           width
-        );
+        );*/
   
       return path;
     }
@@ -51,9 +51,9 @@ function load() {
         if (!hasClass) {
           document.body.classList.add("dark-mode");
         }
-  
         
-        logo.style.offsetPath = calculatePath();
+        
+       logo.style.offsetPath = calculatePath();
       } else {
         if (hasClass) {
           document.body.classList.remove("dark-mode");
@@ -63,6 +63,7 @@ function load() {
         logo.style.offsetPath = "none";
       }
     }
+    
   
     // MediaQueryList object
     const useDark = window.matchMedia("(prefers-color-scheme: dark)");
